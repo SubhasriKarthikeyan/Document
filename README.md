@@ -1,4 +1,22 @@
-Background 
+Component Breakdown
+
+Component / Service	Purpose	Key Responsibilities	Related Functional Requirements
+
+Authentication Service	Manages user authentication and access control	User registration, login, password reset, email verification, role-based access control	FR-US-01 to FR-US-08
+User Management Service	Manages user accounts and profiles	Create and update user accounts, manage roles, activate/suspend users, maintain profiles	FR-US-01 to FR-US-08, FR-AM-37
+Player Profile Service	Manages player portfolios	Create portfolio, upload achievements, submit for verification, track verification status, tournament registration	FR-PPM-09 to FR-PPM-13
+Verification Service	Handles verification processes	Verify player portfolios, verify team requests, approve/reject verification requests	FR-US-08, FR-PPM-11, FR-PPM-12, FR-TM-15, FR-AM-35, FR-AM-36
+Team Management Service	Manages team-related activities	Team registration, browse player profiles, publish newsletters, post reviews, manage team profile	FR-US-02, FR-TM-14 to FR-TM-17
+Tournament Management Service	Manages tournaments	Create tournaments, configure rules and schedules, approve registrations, organize brackets, manage prize pool, support live streaming	FR-TM-18 to FR-TM-22
+Sponsor Management Service	Manages sponsorship operations	Browse player/team profiles, send sponsorship proposals, communicate, track sponsorship agreements, view analytics	FR-US-04, FR-SM-23 to FR-SM-29
+Fan Engagement Service	Supports fan interaction	Community discussions, organizer subscriptions, watch live streams, forums, like/comment/share content	FR-US-05, FR-FEM-30 to FR-FEM-34
+Communication Service	Facilitates communication between users	Direct messaging, sponsorship communication, organizer announcements, newsletters, community discussions	FR-TM-16, FR-SM-24, FR-SM-26, FR-FEM-30, FR-FEM-33
+Live Streaming Service	Supports live tournament broadcasts	Live match streaming, stream scheduling, broadcast management, fan viewing	FR-TM-19, FR-FEM-32
+Notification Service	Sends system notifications	Tournament notifications, sponsorship notifications, verification updates, community announcements	FR-NM-39 to FR-NM-42
+Analytics & Reporting Service	Provides insights and reports	Player analytics, tournament reports, sponsorship analytics, platform dashboards	FR-SM-27, FR-AM-38
+Administration Service	Oversees platform management	Verify portfolios, manage users, monitor platform activities, moderate content	FR-AM-35 to FR-AM-38
+Storage Service	Stores platform data securely	Store user profiles, achievements, tournament data, media files, sponsorship documents, system logs	Supports all functional requirements
+API Gateway Service	Routes and secures API requests	Request routing, authentication validation, authorization, secure communication between frontend and backend	Supports all functional requirements 
 
 The global eSports industry has experienced rapid growth, evolving into a highly competitive and commercially successful ecosystem. Millions of players, tournament organizers, recruiters, sponsors, content creators, and fans actively participate in various gaming events and online communities. Popular games such as League of Legends, Dota 2, Valorant, and Counter-Strike have significantly contributed to the expansion of the industry by attracting large audiences, sponsorships, and investments.
 
@@ -288,4 +306,194 @@ Enforces authentication and authorization.
 Secures communication between frontend and backend.
 
 
+
+
+
+
+
+
+
+
+
+Component Breakdown 1. Authentication Service 
+
+Purpose
+
+Manages user authentication and access control. 
+
+Key Responsibilities
+
+User registration User login and logout Password reset Email verification Role-based access control (RBAC) 
+
+Related Functional Requirements
+
+FR-US-01 to FR-US-08 2. User Management Service 
+
+Purpose
+
+Manages user accounts and profiles. 
+
+Key Responsibilities
+
+Create and update user accounts Manage user roles and permissions Activate, suspend, or remove users Maintain user profiles 
+
+Related Functional Requirements
+
+FR-US-01 to FR-US-08 FR-AM-37 3. Player Profile Service 
+
+Purpose
+
+Manages player gaming portfolios. 
+
+Key Responsibilities
+
+Create and update player portfolio Upload achievements and certifications Submit portfolio for verification View verification status Register for tournaments 
+
+Related Functional Requirements
+
+FR-PPM-09 to FR-PPM-13 4. Verification Service 
+
+Purpose
+
+Handles player and team verification processes. 
+
+Key Responsibilities
+
+Verify player portfolios Verify team requests Approve or reject verification requests Update verification status 
+
+Related Functional Requirements
+
+FR-US-08 FR-PPM-11 FR-PPM-12 FR-TM-15 FR-AM-35 FR-AM-36 5. Team Management Service 
+
+Purpose
+
+Manages team-related operations. 
+
+Key Responsibilities
+
+Team registration and profile management Browse player profiles Submit verification requests Publish newsletters Post tournament reviews 
+
+Related Functional Requirements
+
+FR-US-02 FR-TM-14 to FR-TM-17 6. Tournament Management Service 
+
+Purpose
+
+Manages tournament lifecycle. 
+
+Key Responsibilities
+
+Create tournaments Configure tournament rules and schedules Manage registrations Generate fixtures and brackets Manage prize pools Support live streaming 
+
+Related Functional Requirements
+
+FR-TM-18 to FR-TM-22 7. Sponsor Management Service 
+
+Purpose
+
+Manages sponsorship activities. 
+
+Key Responsibilities
+
+Browse player and team profiles Send sponsorship proposals Communicate with players and teams Manage sponsorship agreements View engagement analytics 
+
+Related Functional Requirements
+
+FR-US-04 FR-SM-23 to FR-SM-29 8. Fan Engagement Service 
+
+Purpose
+
+Supports fan interaction and engagement. 
+
+Key Responsibilities
+
+Join gaming communities Subscribe to organizers Watch live streams Participate in forums Like, comment, and share content 
+
+Related Functional Requirements
+
+FR-US-05 FR-FEM-30 to FR-FEM-34 9. Communication Service 
+
+Purpose
+
+Enables communication between platform users. 
+
+Key Responsibilities
+
+Direct messaging Sponsor-player communication Sponsor-team communication Organizer announcements Community discussions 
+
+Related Functional Requirements
+
+FR-TM-16 FR-SM-24 FR-SM-26 FR-FEM-30 FR-FEM-33 10. Live Streaming Service 
+
+Purpose
+
+Provides live tournament broadcasting. 
+
+Key Responsibilities
+
+Live match streaming Stream scheduling Broadcast management Fan viewing support 
+
+Related Functional Requirements
+
+FR-TM-19 FR-FEM-32 11. Notification Service 
+
+Purpose
+
+Delivers real-time system notifications. 
+
+Key Responsibilities
+
+Tournament notifications Sponsorship notifications Verification notifications Community notifications 
+
+Related Functional Requirements
+
+FR-NM-39 to FR-NM-42 12. Analytics & Reporting Service 
+
+Purpose
+
+Generates analytics and reports. 
+
+Key Responsibilities
+
+Player performance analytics Tournament statistics Sponsorship analytics Administrative dashboards 
+
+Related Functional Requirements
+
+FR-SM-27 FR-AM-38 13. Administration Service 
+
+Purpose
+
+Manages overall platform administration. 
+
+Key Responsibilities
+
+Verify portfolios Manage users Monitor platform activities Moderate community content 
+
+Related Functional Requirements
+
+FR-AM-35 to FR-AM-38 14. Storage Service 
+
+Purpose
+
+Stores platform data securely. 
+
+Key Responsibilities
+
+Store user profiles Store tournament data Store achievements and media files Store sponsorship documents Maintain system logs 
+
+Related Functional Requirements
+
+Supports all functional requirements 15. API Gateway Service 
+
+Purpose
+
+Serves as the entry point for backend services. 
+
+Key Responsibilities
+
+Route API requests Validate authentication Enforce authorization Secure frontend-backend communication 
+
+Related Functional Requirements
+
+Supports all functional requirements 
 
